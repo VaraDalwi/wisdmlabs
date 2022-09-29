@@ -1,0 +1,11 @@
+$my_font : font-family, Hind;
+
+$my_background : #3C2C9C;
+
+html {
+    font-family: $my_font;
+}
+
+.navbar-brand{
+    background-color: $my_background;
+}
