@@ -2,6 +2,7 @@ nav.navbar-lesson{
     padding: 1% 2% 1% 2%;
     display: flex;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.06);
+    border: 1px solid #00000036;
 }
 
 .logo{
@@ -45,7 +46,7 @@ nav.navbar-lesson{
 .lesson-chapters{
     background-color: #fff;
     display: flex;
-    padding: 1%;
+    padding: 2%;
   }
 
 .lesson-chapters:hover{
@@ -162,4 +163,18 @@ nav.navbar-lesson{
 .breadcrumb-item{
     margin-left: 0%;
     color: #999999;
+}
+
+.lesson-heading{
+  padding: 0% 5%;
+}
+
+.chapter-heading{
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.badge-bordered{
+  color: #28a745;
+  border: 1px solid #28a745;
 }
