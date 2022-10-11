@@ -1,6 +1,7 @@
 #navbar{
     position: absolute;
     top: 0;
+    display: flex;
 }
 
 div.navbar-logo{
@@ -371,4 +372,61 @@ div.navbar-logo{
     box-shadow: 4px 4px 10px 0px #00000070;
     transition: 0.5s;
     border-left: 5px solid #01AED3;
+  }
+
+  #navbarmini{
+    display: none;
+  }
+
+  .course-info-list-div{
+    display: none;
+  }
+
+  @media screen and (min-width:200px) and (max-width:400px){
+    #navbar{
+      display: none;
+    }
+    #navbarmini{
+      display: flex;
+      position: absolute;
+      top: 0;
+    }
+    .home-title {
+      font-size: 42px;
+    }
+    .home-box{
+      padding: 0% 3%;
+    }
+    .course-info-list{
+      display: none;
+    }
+    .course-info-list-mini{
+      display: flex;
+      list-style: none;
+      padding: 1%;
+      margin: 0%;
+      align-items: baseline;
+    }
+    .course-info-list-div{
+      display: block;
+      padding: 2%;
+    }
+    .course-info {
+      width: 90%;
+    }
+    .course-details{
+      width: 100%;
+    }
+    .imgmini{
+      display: none;
+    }
+    .course-details-list li {
+      margin-right: 5%;
+    }
+    div.navbar-logo {
+      padding: 5px 25px 5px 25px;
+    }
+    .buy-now {
+      margin-left: 20%;
+    }
   }
