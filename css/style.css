@@ -1,5 +1,6 @@
-nav{
+.navnormal{
   position: relative;
+  display: flex;
 }
 
 div.navbar-logo{
@@ -383,4 +384,103 @@ p.testimonials-heading{
 
 .footer-list-image{
   margin-right: 4%;
+}
+
+.mini{
+  display: none;
+}
+
+.mini-img{
+  display: none;
+}
+
+.borderleft{
+  border-left: 1px solid #f7f7f752;
+}
+
+.trusted-box-mini{
+  display: none;
+}
+
+@media screen and (min-width:200px) and (max-width:400px){
+  .mini{
+    display: flex;
+    background-color: #3C2C9C;
+  }
+  .navnormal{
+    display: none;
+  }
+  .mini-img{
+    display: block;
+  }
+  .home-title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .home-page {
+    height: 80vh;
+  }
+  #about{
+    padding: 0%;
+  }
+  .borderleft{
+    border: none;
+  }
+  .works-points {
+    font-size: 15px;
+  }
+  .number-on-rec-one {
+    right: 25%;
+  }
+  .number-on-rec-two {
+    right: 21%;
+  }
+  .number-on-rec-three {
+    right: 21%;
+  }
+  #list{
+    margin-top: 5%;
+  }
+  h1.common-title{
+    font-size: 30px;
+    text-align: center;
+  }
+  .list-slide-left{
+    display: none;
+  }
+  .list-slide-right{
+    display: none;
+  }
+  #trusted{
+    padding: 0%;
+  }
+  .trusted-box-mini{
+    display: block;
+    background-image: url('../img/trusted-rec.png');
+    background-color: #3C2C9C;
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding: 5% 7%;
+  }
+  .trusted-box{
+    display: none;
+  }
+  #transform{
+    padding: 10% 3%;
+  }
+  .transform-card{
+    width: 100%;
+  }
+  #newsletter{
+    padding: 0%;
+  }
+  h1.newsletter-title{
+    font-size: 29px;
+  }
+  .newsletter-box {
+    padding: 5%;
+  }
+  .footer-bottom{
+    text-align: center;
+  }
 }
