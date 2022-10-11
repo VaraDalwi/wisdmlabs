@@ -288,12 +288,6 @@ div.navbar-logo{
     padding: 1%;
   }
 
-  .course-chapters:hover{
-    box-shadow: 4px 4px 10px 0px #00000070;
-    transition: 0.5s;
-    border-left: 5px solid #01AED3;
-  }
-
   .chapter-name{
     margin-bottom: 0%;
   }
@@ -325,7 +319,7 @@ div.navbar-logo{
     font-weight: 700;
     border: 1px solid #999999;
     border-radius: 50px;
-    padding: 4% 9%;
+    padding: 3% 6%;
   }
 
   .dropdown-chapter{
@@ -339,4 +333,42 @@ div.navbar-logo{
     border: 1px solid #999999;
     border-radius: 50px;
     padding: 6% 9%;
+    cursor: pointer;
+  }
+
+  .dropdown-arrow:hover{
+    border: 1px solid #01AED3;
+    color: #01AED3;
+    box-shadow:1px 2px 5px #00000080;
+    transition: 0.5s;
+  }
+
+  #course_topics{
+    padding: 0% 4% 0% 4%;
+  }
+
+  .topics-text{ 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color:#999999;
+    margin-bottom: 0%;
+  } 
+
+  .topic-head{
+    padding: 1% 5%;
+    display:flex;
+    border: 1px solid #E7E7E7;
+    border-radius: 3px;
+  }
+
+  .topic-content{
+    padding: 3% 7%;
+  }
+
+  .topic-dropdown:hover{
+    box-shadow: 4px 4px 10px 0px #00000070;
+    transition: 0.5s;
+    border-left: 5px solid #01AED3;
   }

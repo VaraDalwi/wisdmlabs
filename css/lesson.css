@@ -1,8 +1,41 @@
-nav.navbar-lesson{
+.navbar-lesson{
     padding: 1% 2% 1% 2%;
     display: flex;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.06);
     border: 1px solid #00000036;
+}
+
+.navbar-mini-lesson{
+  padding: 0%;
+  display: flex;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.06);
+  border: 1px solid #00000036;
+}
+
+.navbar-mini-items{
+  display: flex;
+  width: 35%;
+  align-items: center;
+}
+
+.dropdown-mini{
+  list-style: none;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: #fff;
+  z-index: 999;
+  padding: 5%;
+  box-shadow: 0px 0px 5px #00000069;  
+  width: 50%;
+}
+
+.dropdown-mini-item{
+  padding: 5%;
+}
+
+.logo-mini{
+  width: 30%;
 }
 
 .logo{
@@ -16,8 +49,9 @@ nav.navbar-lesson{
 .sidebar{
     background-color: #f7f7f7;
     padding: 1%;
-    height: 60vh;
+    height: 100%;
     overflow: scroll;
+    min-height: 88vh;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -47,12 +81,6 @@ nav.navbar-lesson{
     background-color: #fff;
     display: flex;
     padding: 2%;
-  }
-
-.lesson-chapters:hover{
-    box-shadow: 4px 4px 10px 0px #00000070;
-    transition: 0.5s;
-    border-left: 5px solid #01AED3;
   }
 
   .chapter-name{
@@ -105,6 +133,8 @@ nav.navbar-lesson{
     border: 1px solid #01AED3;
     background-color: #01AED3;
     color:#fff;
+    transition: 0.5s;
+    cursor: pointer;
   }
 
   .bottom-nav{
@@ -153,6 +183,13 @@ nav.navbar-lesson{
     background-color: #fff;
     padding: 1.5%;
     display: flex;
+}
+
+.breadcrumb-rhs-mini{
+  background-color: #fff;
+  padding: 1.5%;
+  display: flex;
+  display: none;
 }
 
 .active {
@@ -235,4 +272,60 @@ nav.navbar-lesson{
 
 .topic-content{
   padding: 3% 7%;
+}
+
+.lesson-dropdown:hover{
+  box-shadow: 4px 4px 10px 0px #00000070;
+  transition: 0.5s;
+  border-left: 5px solid #01AED3;
+}
+
+.navbar-mini-lesson{
+  display: none;
+}
+
+@media screen and (min-width:200px) and (max-width:400px){
+  .hide{
+    display: none;
+  }
+  .breadcrumb-rhs{
+    display: none;
+  }
+  .breadcrumb-rhs-mini{
+    display: flex;
+  }
+  .navbar-lesson{
+    display: none;
+  }
+  .navbar-mini-lesson{
+    display: flex;
+  }
+  .lesson-btn{
+    padding: 2% 6%;
+  }
+  .material-btn{
+    padding: 1% 6% 2% 6%;
+  }
+  .sidebar{
+    display: none;
+  }
+  .lhs-header{
+    font-size: 58%;
+  }
+  .bottom-nav-btn {
+    width: 40%;
+  }
+  .topic-title{
+    font-size: 80%;
+    width: 45%;
+  }
+  .green-text{
+    font-size:55%;
+  }
+  .topic-logo {
+    width: 11%;
+  }
+  .topic-content {
+    font-size: 75%;
+  }
 }
