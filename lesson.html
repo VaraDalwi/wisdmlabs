@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COURSE DETAILS</title>
+
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+        body{
+            font-family: 'Asap', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar-lesson">
+        <div class="logo">
+            <img src="img/logo-lesson.png">
+        </div>
+        <div class="navbar-items">
+            <img class="mr-5" src="img/Progress 19%.png">
+            <img class="mr-3" src="img/User.png">
+            <img class="mr-3" src="img/Setting icon.png">
+            <img src="img/Focus Mode.png">
+        </div>
+
+    </nav>
+    <nav class="navbar-mini-lesson">
+        <div class="logo-mini">
+            <a onclick="openSidebar()"><img src="img/Lesson list.png" width="100%"></a>
+        </div>
+        <div class="navbar-mini-items">
+            <img class="ml-3" src="img/Progress 19%.png" width="100%">
+            <img class="ml-3" src="img/Setting icon.png" width="100%">
+            <a onclick="dropdownMini()" class="ml-2 text-dark" style="cursor:pointer"><i class="fa fa-ellipsis-v" style="font-size: 20px;"></i></a>
+            <ul class="dropdown-mini" style="display:none">
+                <li class="dropdown-mini-item">My Profile</li>
+                <li class="dropdown-mini-item">My Courses</li>
+                <li class="dropdown-mini-item">Logout</li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="mini" style="display: none;">
+        <div class="col-lg-4 sidebar p-0">
+            <div class="lhs-header">
+                <i class="fa fa-angle-left mr-3" style="font-size: 28px;color:#01AED3;"></i>
+                <p class="back-text">Intro to Acoustic Fingerstyle Guitar Course: Beginner...</p>
+            </div>
+            
+            <p class="common-text mt-5">INTRODUCTION</p>
+            <div class="lesson-dropdown">
+                <div class="lesson-chapters">
+                    <div class="chapter-number">
+                        <span class="number">1</span>
+                    </div>
+                    <div class="chapter-details">    
+                        <span class="badge badge-pill badge-warning text-white">Sample</span>
+                        <p class="chapter-name">Basic Learning</p>
+                        <ul class="chapter-details-list">
+                            <li style="color: #999999;"> 3 Topics</li>
+                            <li style="color: #999999;"> 1 Quiz</li>
+                            <li style="color: #999999;"> 10 mins.</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-chapter">
+                        <i class="fa fa-angle-down dropdown-arrow"></i>
+                    </div>
+                </div>
+                <div id="course_topics" style="display: none;">
+                    <div class="topic-content">
+                        <p class="mb-4"><img class="mr-3" src="img/list 2.png">Understanding the String Names<small style="float:right;color:#9d9d9d">5 mins.</small></p>
+                        <p class="mb-4"><img class="mr-3" src="img/list 2.png">Using an Electric Tuner<small style="float:right;color:#9d9d9d">10 mins.</small></p>
+                        <p class="mb-4"><img class="mr-3" src="img/play.png">Tuning with Harmonics<small style="float:right;color:#9d9d9d">15 mins.</small></p>
+                        <p><img class="mr-3" src="img/que.png">Quiz</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="lesson-chapters mt-3">
+                <div class="chapter-number">
+                    <span class="number">2</span>
+                </div>
+                <div class="chapter-details">    
+                    <p class="chapter-name">Tuning Your Guitar</p>
+                    <ul class="chapter-details-list">
+                        <li style="color: #999999;"> 3 Topics</li>
+                        <li style="color: #999999;"> 1 Quiz</li>
+                        <li style="color: #999999;"> 10 mins.</li>
+                    </ul>
+                </div>
+                <div class="dropdown-chapter">
+                    <i class="fa fa-angle-down dropdown-arrow"></i>
+                </div>
+            </div>
+            <div class="lesson-chapters mt-3">
+                <div class="chapter-number">
+                    <span class="number">3</span>
+                </div>
+                <div class="chapter-details">    
+                    <p class="chapter-name">Amazing Grace</p>
+                    <ul class="chapter-details-list">
+                        <li style="color: #999999;"> 3 Topics</li>
+                        <li style="color: #999999;"> 1 Quiz</li>
+                        <li style="color: #999999;"> 10 mins.</li>
+                    </ul>
+                </div>
+                <div class="dropdown-chapter">
+                    <i class="fa fa-angle-down dropdown-arrow"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="main">
+        <div class="row m-0">
+            
+            <div class="col-lg-4 sidebar">
+                <div class="lhs-header">
+                    <i class="fa fa-angle-left mr-3" style="font-size: 28px;color:#01AED3;"></i>
+                    <p class="back-text">Intro to Acoustic Fingerstyle Guitar Course: Beginner...</p>
+                </div>
+                
+                <p class="common-text mt-5">INTRODUCTION</p>
+                <div class="lesson-dropdown">
+                    <div class="lesson-chapters">
+                        <div class="chapter-number">
+                            <span class="number">1</span>
+                        </div>
+                        <div class="chapter-details">    
+                            <span class="badge badge-pill badge-warning text-white">Sample</span>
+                            <p class="chapter-name">Basic Learning</p>
+                            <ul class="chapter-details-list">
+                                <li style="color: #999999;"> 3 Topics</li>
+                                <li style="color: #999999;"> 1 Quiz</li>
+                                <li style="color: #999999;"> 10 mins.</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-chapter">
+                            <i class="fa fa-angle-down dropdown-arrow"></i>
+                        </div>
+                    </div>
+                    <div id="course_topics" style="display: none;">
+                        <div class="topic-content">
+                            <p class="mb-4"><img class="mr-3" src="img/list 2.png">Understanding the String Names<small style="float:right;color:#9d9d9d">5 mins.</small></p>
+                            <p class="mb-4"><img class="mr-3" src="img/list 2.png">Using an Electric Tuner<small style="float:right;color:#9d9d9d">10 mins.</small></p>
+                            <p class="mb-4"><img class="mr-3" src="img/play.png">Tuning with Harmonics<small style="float:right;color:#9d9d9d">15 mins.</small></p>
+                            <p><img class="mr-3" src="img/que.png">Quiz</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="lesson-chapters mt-3">
+                    <div class="chapter-number">
+                        <span class="number">2</span>
+                    </div>
+                    <div class="chapter-details">    
+                        <p class="chapter-name">Tuning Your Guitar</p>
+                        <ul class="chapter-details-list">
+                            <li style="color: #999999;"> 3 Topics</li>
+                            <li style="color: #999999;"> 1 Quiz</li>
+                            <li style="color: #999999;"> 10 mins.</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-chapter">
+                        <i class="fa fa-angle-down dropdown-arrow"></i>
+                    </div>
+                </div>
+                <div class="lesson-chapters mt-3">
+                    <div class="chapter-number">
+                        <span class="number">3</span>
+                    </div>
+                    <div class="chapter-details">    
+                        <p class="chapter-name">Amazing Grace</p>
+                        <ul class="chapter-details-list">
+                            <li style="color: #999999;"> 3 Topics</li>
+                            <li style="color: #999999;"> 1 Quiz</li>
+                            <li style="color: #999999;"> 10 mins.</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-chapter">
+                        <i class="fa fa-angle-down dropdown-arrow"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 p-0">
+                <div class="breadcrumb-rhs">
+                    <p class="active">Intro to Acoustic Fingerstyle Guitar Course: Beginner to Advanced</p>
+                    <i class="fa fa-angle-right ml-3 mr-3" style="font-size: 23px; color: #999999"></i>
+                    <p class="breadcrumb-item">Basic Learning</p>
+                </div>
+
+                <div class="breadcrumb-rhs-mini">
+                    <p class="active" style="font-size:70%">Intro to Acoustic Fingerstyle...</p>
+                    <i class="fa fa-angle-right ml-3 mr-3" style="font-size: 70%; color: #999999"></i>
+                    <p class="breadcrumb-item" style="font-size:70%">Basic Learning</p>
+                </div>
+
+                <div class="lesson-heading">
+                    <span class="badge badge-pill badge-bordered">In Progress</span>
+                    <p class="chapter-heading">Basic Learning</p>
+
+                    <div class="lesson-radio">
+                        <button class="lesson-btn"><img src="img/list 2.png"> LESSON</button>
+                        <button class="material-btn"><img src="img/material.png"> MATERIAL</button>
+                    </div>
+                    <div class="lesson-details">
+                        <p>Born in the trenches of low and no-budget filmmaking by an active indie filmmaker, this course won’t waste your time with irrelevant and outdated theory - you learn what you really need to know to get your story idea out of your head and on the written page in a format that can be shot by you or independent filmmakers without the need for a big budget.</p>
+
+                        <p>Your head and on the written page in a format that can be shot by you or independent filmmakers without the need for a big budget.</p>
+                    </div>
+
+                    <div class="topic">
+                        <div class="topic-heading">
+                            <p class="topic-title mb-0"><img class="topic-logo" src="img/Group.png">Topics</p>
+                            <p class="green-text mb-0">50% Complete</p>
+                            <p class="green-text mb-0 ml-lg-5">2 of 4 Complete</p>
+                        </div>
+                        <div class="topic-content">
+                            <p class="text-success mb-4"><img class="mr-3" src="img/files.png">Understanding the String Names</p>
+                            <p class="text-success mb-4"><img class="mr-3" src="img/files.png">Using an Electric Tuner</p>
+                            <p class="mb-4"><img class="mr-3" src="img/play.png">Tuning with Harmonics</p>
+                            <p><img class="mr-3" src="img/que.png">Quiz</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-nav">
+                    <div class="lhs-bottom">
+                        <i class="fa fa-angle-left mr-3" style="font-size: 18px;color:#01AED3;margin: auto;margin-left: 0;"></i>
+                        <p class="bottom-nav-text">BACK TO COURSE</p>
+                    </div>
+                    <div class="bottom-nav-btn">
+                        <button class="bottom-btn bottom-nav-text">NEXT LESSON<i class="fa fa-angle-right ml-2" style="font-size: 14px;"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
