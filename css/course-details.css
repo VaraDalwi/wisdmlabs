@@ -386,6 +386,10 @@ div.navbar-logo{
     width: 75%;
   }
 
+  .bottom-div{
+    display: none;
+  }
+
   @media screen and (min-width:200px) and (max-width:400px){
    
     .course-details-nav-list{
@@ -403,7 +407,7 @@ div.navbar-logo{
     }
     .course-material-div{
         width: 100%;
-        top: 12%;
+        top: 8%;
     }
     .course-video {
         width: 100%;
@@ -453,5 +457,80 @@ div.navbar-logo{
     }
     .topic-content{
         font-size: 14px;
+    }
+    .bottom-div{
+      display: flex;
+      position: sticky;
+      bottom: 0px;
+      left: 0;
+      background-color: #000000;
+      color: #fff;
+      padding: 3% 15%;
+    }
+    .bottom-div-buy-btn{
+      color: #fff;
+      padding: 2% 15%;
+      border-radius: 50px;
+      background-color: #01AED3;
+      width: 75%;
+    }
+    .bottom-div-text{
+      width:25%;
+      font-size: 30px;
+      margin-bottom: 0%;
+    }
+  }
+
+  @media screen and (min-width:700px) and (max-width:900px){
+    .imgmid{
+      display: none;
+    }
+    .course-details-nav {
+      padding: 2% 2%;
+    }
+    .course-details-buy-now {
+      font-size: 30px;
+    }
+    .course-details-buy-btn {
+      padding: 2% 7%;
+      font-size: 16px;
+    }
+    .course-material-div {
+      top: 12%;
+      padding: 0% 3%;
+    }
+    .course-div {
+      padding: 4% 4%;
+    }
+    .course-video {
+      height: 345px;
+      width: 100%;
+    }
+    .course-radio {
+      padding: 0% 6%;
+    }
+    .course-btn {
+      padding: 3% 7%;
+    }
+    .material-btn {
+      padding: 2% 7% 3% 7%;
+    }
+    .course-tab-text{
+      margin-top: 4%;
+    }
+    .course-content-heading{
+      width: 80%;
+    }
+    .number{
+      padding: 3% 7%;
+    }
+    .dropdown-arrow {
+      padding: 6% 10%;
+    }
+    .topic-img {
+      width: 63%;
+    }
+    .topic-head {
+      padding: 1% 2%;
     }
   }

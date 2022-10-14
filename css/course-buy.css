@@ -430,3 +430,29 @@ div.navbar-logo{
       margin-left: 20%;
     }
   }
+
+  @media screen and (min-width:700px) and (max-width:900px){
+    #navbar{
+      display: none;
+    }
+    #navbarmini{
+      display: flex;
+      position: absolute;
+      top: 0;
+    }
+    .home-box {
+      top: 15%;
+      padding: 3% 10% 0% 10%;
+    }
+    .course-info {
+      width: 100%;
+      margin-top: 5%;
+    }
+    .course-details {
+      margin-top: 7%;
+      width: 80%;
+    }
+    .buy-now {
+      margin-top: 10%;
+    }
+  }
